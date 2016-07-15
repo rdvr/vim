@@ -13,6 +13,8 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+"on search, hilite matches, do an incremental search
+set hlsearch incsearch
 
 "settings for vim-airline status bar
 set laststatus=2
