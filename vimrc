@@ -2,8 +2,14 @@
 execute pathogen#infect()
 
 "basic vim settings
+"enable VIM functionality
+set nocompatible
+"enable auto indenting
+set autoindent
 "enable line numbering
 set number
+"show any incomplete commands in the status bar
+set showcmd
 "set indenting to use 4 spaces 
 set sw=4 ts=4 sts=4 et 
 "enable syntax highlighting
@@ -13,8 +19,13 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-"on search, hilite matches, do an incremental search
-set hlsearch incsearch
+"on search, do an incremental search
+set incsearch
+
+"maximize GVim on startup
+if has("gui_running")
+    set lines=999 columns=999
+endif
 
 "settings for vim-airline status bar
 set laststatus=2
