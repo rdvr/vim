@@ -13,6 +13,13 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" bubble text
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+vmap <C-Up> xkP`[V`]
+vmap <C-Down> xp`[V`]
+
 "on search, hilite matches, do an incremental search
 set hlsearch incsearch
 
