@@ -29,6 +29,7 @@ if has('autocmd')
 endif
 
 set number
+set relativenumber
 set sw=4 ts=4 sts=4 et 
 
 syntax on
