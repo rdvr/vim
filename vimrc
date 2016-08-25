@@ -17,6 +17,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'edsono/vim-matchit'
 Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 " Colourschemes
 Plugin 'altercation/vim-colors-solarized'
@@ -71,5 +72,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Git gutter settings
+set updatetime=250
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
