@@ -65,7 +65,7 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
-" Markdown Leader key
+" Markdown Leader key - apt-get install markdown
 nmap <Leader>m :%!/usr/bin/markdown --html4tags <cr>
 
 " Syntastic Plugin Settings
