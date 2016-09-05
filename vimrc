@@ -65,6 +65,9 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
+" Markdown Leader key
+nmap <Leader>m :%!/usr/bin/markdown --html4tags <cr>
+
 " Syntastic Plugin Settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
