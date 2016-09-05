@@ -13,11 +13,13 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-markdown'
 Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'edsono/vim-matchit'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'klen/python-mode'
 
 " Colourschemes
 Plugin 'altercation/vim-colors-solarized'
