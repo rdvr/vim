@@ -65,8 +65,13 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
-" Markdown Leader key - apt-get install markdown
-nmap <Leader>m :%!/usr/bin/markdown --html4tags <cr>
+" Pandoc - apt-get install pandoc
+" Markdown to HTML
+nmap <Leader>h :%!/usr/bin/pandoc -f markdown -t html<cr>
+" HTML to Markdown
+nmap <Leader>m :%!/usr/bin/pandoc -f html -t markdown<cr>
+" Markdown to ODF
+nmap <Leader>o :%!/usr/bin/pandoc -f markdown -t odt -o %.odt<cr>
 
 " Syntastic Plugin Settings
 set statusline+=%#warningmsg#
