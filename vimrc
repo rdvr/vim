@@ -20,6 +20,7 @@ Plugin 'edsono/vim-matchit'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'klen/python-mode'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Colourschemes
 Plugin 'altercation/vim-colors-solarized'
@@ -47,6 +48,12 @@ set wildmenu
 set incsearch
 
 set laststatus=2
+
+if has("gui_running")
+    if has("gui_gtk2")
+        set guifont=Inconsolata\ 14
+    endif
+endif
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
